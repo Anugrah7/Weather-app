@@ -1,0 +1,22 @@
+*{
+ font-family: "Rowdies", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.images{
+    animation: rot 2s infinite;
+    
+}
+
+@keyframes rot{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
