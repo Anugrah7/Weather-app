@@ -23,8 +23,9 @@ function App() {
       const data = await response.json();
       if (data.cod === 200) {
         setWeather(data);
-        console.log(data);
-      } else {
+      } 
+      
+      else {
         setError(data.message);
         setWeather(null);
       }
@@ -96,7 +97,7 @@ function App() {
   <i className="fa-solid fa-wind text-white"></i>
   <h1 className="font-bold text-xl bg-gradient-to-tr from-zinc-50 via-gray-200 to-yellow-400 bg-clip-text text-transparent">Wind Speed: {weather.wind.speed} m/s</h1>
   <div className='flex justify-center items-center space-x-2 '>
-              <i class="fa-solid fa-water text-white"></i>
+              <i className="fa-solid fa-water text-white"></i>
               <h1 className="font-bold text-xl bg-gradient-to-tr from-zinc-50 via-gray-200 to-yellow-400 bg-clip-text text-transparent">Humidity: {weather.main.humidity}%</h1>
               </div>
 </div>
