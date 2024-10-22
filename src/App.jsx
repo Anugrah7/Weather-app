@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Sun from './assets/clear.png';
 import Cloud from './assets/cloud.png';
-import Snow from './assets/snowMain.png';
+import SnowMain from './assets/snowMain.png';
 import Background from './assets/background.jpg'
 import './App.css'
 
@@ -39,7 +39,7 @@ function App() {
     } else if (temp < 30 && temp > 15) {
       return Cloud;
     } else {
-      return Snow;
+      return SnowMain;
     }
   };
 
